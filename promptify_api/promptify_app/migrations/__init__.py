@@ -1,0 +1,2 @@
+
+"promptify_app migration's __init__.py file"
