@@ -117,8 +117,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
-CORS_ALLOW_ALL_ORIGINS = True   # shudhu prothome test er jonno
 
+CORS_ALLOWED_ORIGINS = [
+    "https://your-app.vercel.app",
+    "http://localhost:5173",
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
