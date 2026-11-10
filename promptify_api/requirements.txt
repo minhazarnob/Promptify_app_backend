@@ -10,3 +10,4 @@ tzdata==2026.6
 whitenoise==6.12.0
 python-dotenv
 djangorestframework
+openai
