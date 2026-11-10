@@ -3,8 +3,8 @@ import uuid
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
-
 # Create your models here:
+
 class CustomUser(AbstractUser):
     email = models.EmailField(unique=True)
 
@@ -13,7 +13,7 @@ class CustomUser(AbstractUser):
 
 class Chat(models.Model):
     id = models.UUIDField(default=uuid.uuid4, primary_key=True, editable=False)
-    title = models.CharField(max_length=255, blank=True, null=True)  # Optional, for UI display
+    title = models.CharField(max_length=255, blank=True, null=True)  
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

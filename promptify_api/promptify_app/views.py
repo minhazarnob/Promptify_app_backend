@@ -1,7 +1,7 @@
 
 import os
-from datetime import timedelta
 import pprint
+from datetime import timedelta
 
 from django.shortcuts import get_object_or_404
 from django.utils import timezone
@@ -11,7 +11,8 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from promptify_app.models import Chat, ChatMessage
-from promptify_app.serializers import ChatMessageSerializer, ChatSerializer
+from promptify_app.serializers import ChatMessageSerializer
+from promptify_app.serializers import ChatSerializer
 
 client = OpenAI(
     api_key=os.getenv("GEMINI_API_KEY"),
