@@ -15,7 +15,11 @@ SECRET_KEY = 'django-insecure-rw9d#!@s4*(lh7ct@pvg-r4o=r!&9-kkk(nc#p5z9!63art2r1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    "promptify-app-backend-1.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 
 # Application definition
@@ -62,13 +66,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'promptify.wsgi.application'
-
-# settings/development.py
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-]
-
 
 # Database weblink
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
@@ -119,7 +116,8 @@ STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
 CORS_ALLOWED_ORIGINS = [
-    "https://your-app.vercel.app",
+    "https://promptify-app-frontend-klyk-phi.vercel.app",
+    "http://127.0.0.1:5173",
     "http://localhost:5173",
 ]
 # Default primary key field type
